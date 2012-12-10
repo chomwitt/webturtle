@@ -1,0 +1,20 @@
+start = wtprogram
+
+wtprogram = (command)+
+
+command = movement 
+
+movement = forward / backward / turnleft / turnright
+
+forward = "μπροστά"  whitespace  integer
+
+backward =  "πίσω"  whitespace  integer
+
+turnleft  = "στρίψεαριστερά"  whitespace  integer
+
+turnright = "στρίψεδεξιά"  whitespace  integer
+
+integer "integer"
+  = digits:[0-9]+ { return parseInt(digits.join(""), 10); }
+  
+whitespace = [\n\t ]+ 
