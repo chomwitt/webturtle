@@ -1,0 +1,15 @@
+You'll need node installed.
+For Debian,Ubuntu :
+Make sure you have installed deb package build-essential
+Download node package and do configure,make,make install.
+Install node from http://nodejs.org/ . You'll download a package that you
+must first install with $ tar zxvf node-vX.Y.tar.gz
+
+The download & install pegjs node package with npm globally.
+$ npm -g install pegjs
+
+If 
+$ node parser.js  
+throws error not finding pegjs theh supply a full path:
+var PEG = require('/usr/local/lib/node_modules/pegjs');
+

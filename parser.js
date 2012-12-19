@@ -1,4 +1,4 @@
-var PEG = require('pegjs');
+var PEG = require('/usr/local/lib/node_modules/pegjs');
 var assert = require('assert');
 var fs = require('fs'); // for loading files
 
